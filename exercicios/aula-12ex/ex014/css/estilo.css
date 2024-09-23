@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(21, 102, 150);
+    font: normal 15pt Arial;
+}
+
+a {
+    color: rgb(255, 255, 255);
+    font: bold 15pt Arial;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #dddddd;
+}
+
+header#cabecalho {
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+section#corpo {
+    background-color: rgb(255, 255, 255);
+    border-radius: 40px;
+    padding: 15px;
+    max-width: 500px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+}
+
+div {
+    padding: 10px;
+    text-align: center;
+}
+
+footer#rodape {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-style: italic;
+}

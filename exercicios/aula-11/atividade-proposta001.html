@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+   <h1>Verificação de Nacionalidade</h1>
+   <input type="text" name="pais" id="pais">
+   <input type="button" id="botao" value="Verificar">
+   <div id="res">
+
+   </div>
+   <script>
+        var bver = window.document.querySelector('input#botao');
+        bver.addEventListener('click', verification);
+        function verification() {
+            var txp = window.document.querySelector('input#pais');
+            var res = window.document.querySelector('div#res');
+            res.innerHTML = 'Você é ';
+            if (txp.value.toUpperCase() == 'BRASIL') {
+                res.innerHTML += '<strong>Brasileiro</strong>!';
+            } else {
+                res.innerHTML += '<strong>Estrangeiro</strong>!';
+            }
+        }
+   </script> 
+</body>
+</html>
